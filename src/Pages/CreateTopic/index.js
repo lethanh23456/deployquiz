@@ -31,7 +31,7 @@ function CreateTopic() {
         e.preventDefault();
         // console.log(e.target[0].value);
         let options = {
-            id : maxId,
+            id : String(maxId),
             name : e.target[0].value,
         }
        createTopic(options);
@@ -69,8 +69,8 @@ function CreateTopic() {
         <div className="create-topic">
         <h2>Tạo chủ đề mới</h2>
         <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Nhập tên chủ đề"  required />
-            <button type="submit">Tạo</button>
+            <input type="text" placeholder="Nhập tên chủ đề" className="create-topic-inp" required/>
+            <button type="submit" className="create-topic-btn">Tạo</button>
         </form>
         </div>
 
@@ -79,33 +79,33 @@ function CreateTopic() {
             <h2>Thêm câu hỏi mới vào hệ thống</h2>
             <form onSubmit={handleSubmitQuestion}>
                 <div>
-                <label>Topic ID:</label>
-                <input type="text" name="answer1" required />
+                <label className="create-topic-lable">Topic ID:</label>
+                <input type="text" name="answer1" className="create-topic-inp" required />
                 </div>
 
                 <div>
-                <label htmlFor="question">Câu hỏi:</label>
-                <textarea id="question" name="question" rows="3" required />
+                <label className="create-topic-lable" >Câu hỏi:</label>
+                <textarea className="create-topic-textarea" id="question" name="question" rows="3" required />
                 </div>
 
                 <div>
-                <label>Đáp án 1:</label>
-                <input type="text" name="answer1" required />
+                <label className="create-topic-lable">Đáp án 1:</label>
+                <input type="text" name="answer1" className="create-topic-inp"  required />
                 </div>
 
                 <div>
-                <label>Đáp án 2:</label>
-                <input type="text" name="answer2" required />
+                <label className="create-topic-lable">Đáp án 2:</label>
+                <input type="text" name="answer2" className="create-topic-inp"  required />
                 </div>
 
                 <div>
-                <label>Đáp án 3:</label>
-                <input type="text" name="answer3" required />
+                <label className="create-topic-lable">Đáp án 3:</label>
+                <input type="text" name="answer3" className="create-topic-inp"  required />
                 </div>
 
                 <div>
-                <label>Chọn đáp án đúng:</label>
-                <select name="correctAnswer" required>
+                <label className="create-topic-lable">Chọn đáp án đúng:</label>
+                <select className="create-topic-select" name="correctAnswer" required>
                     <option value="">-- Chọn --</option>
                     <option value="0">Đáp án 1</option>
                     <option value="1">Đáp án 2</option>
@@ -113,7 +113,7 @@ function CreateTopic() {
                 </select>
                 </div>
 
-                <button type="submit">Lưu câu hỏi</button>
+                <button type="submit" className="create-topic-btn">Lưu câu hỏi</button>
             </form>
         </div>
     </div>

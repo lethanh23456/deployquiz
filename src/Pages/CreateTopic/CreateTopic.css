@@ -6,7 +6,7 @@
   border: 1px solid #ddd;
   border-radius: 12px;
   background-color: #f9f9f9;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(203, 189, 189, 0.05);
 }
 
 .create-topic h2,
@@ -16,20 +16,31 @@
   color: #333;
 }
 
-form div {
-  margin-bottom: 15px;
-}
 
-label {
+.create-topic-lable {
   display: block;
   font-weight: 500;
   margin-bottom: 5px;
   color: #444;
 }
+.create-topic-textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+.create-topic-inp {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
 
-input[type="text"],
-textarea,
-select {
+.create-topic-select {
   width: 100%;
   padding: 10px;
   font-size: 14px;
