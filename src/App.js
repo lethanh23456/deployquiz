@@ -3,7 +3,7 @@ import AllRoute from './components/AllRoute';
 import { useState, useEffect } from 'react';
 
 function App() {
-  const [isTooSmall, setIsTooSmall] = useState(window.innerWidth < 1440);
+  const [isTooSmall, setIsTooSmall] = useState(window.innerWidth < 780);
 
   useEffect(() => {
     const handleResize = () => {
@@ -16,7 +16,7 @@ function App() {
   if (isTooSmall) {
     return (
       <div style={{ padding: '2rem', textAlign: 'center', fontSize: '1.5rem' }}>
-        Giao diện đang được cập nhật. Vui lòng sử dụng máy tính (≥1440px) để truy cập trang web.
+        Giao diện đang được cập nhật. Vui lòng sử dụng máy tính (≥780px) để truy cập trang web.
       </div>
     );
   }
