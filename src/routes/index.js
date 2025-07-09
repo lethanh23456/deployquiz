@@ -8,6 +8,7 @@ import Quiz from "../Pages/Quiz";
 import Result from "../Pages/Result";
 import Topic from "../Pages/Topic";
 import Logout from "../Pages/Logout";
+import CreateTopic from "../Pages/CreateTopic";
 
 export const routes = [
   {
@@ -30,6 +31,10 @@ export const routes = [
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path : "/createTopic",
+        element: <CreateTopic />,
       },
       {
         element: <PrivateRoutes />,

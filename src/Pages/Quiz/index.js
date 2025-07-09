@@ -35,6 +35,7 @@ function Quiz() {
         e.preventDefault();
         let selectedAnswers = [];
         for ( let i = 0 ; i < e.target.elements.length ; i++){
+            // người dùng chọn đáp án
             if(e.target.elements[i].checked){
                 const name = e.target.elements[i].name;
                 const value = e.target.elements[i].value;

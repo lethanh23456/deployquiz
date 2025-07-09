@@ -13,18 +13,18 @@ function LayoutDefault() {
                         <ul>
                             <li>
                                 <NavLink to="/">
-                                    Home
+                                    Trang chủ
                                 </NavLink>
                             </li>
                             {token && (<>
                             <li>
                                 <NavLink to="Topic">
-                                    Topic
+                                    Chủ đề
                                 </NavLink>
                             </li>
                             <li>
                                 <NavLink to="Answers">
-                                    Answers 
+                                    Các bài đã làm 
                                 </NavLink>
                             </li>
                             </>)}
@@ -33,7 +33,7 @@ function LayoutDefault() {
                     </div>
                     <div className = "layout-default__account">
                       {token ? (<>
-                        <NavLink to = "/logout" >log out</NavLink>
+                        <NavLink to = "/logout" >Đăng xuất</NavLink>
                       </>) : (<>
                         <NavLink to = "/login" >dang nhap</NavLink>
                         <NavLink to = "/register" >dang ky</NavLink>

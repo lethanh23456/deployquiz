@@ -29,6 +29,9 @@
     padding: 15px;
     border-radius: 10px;
 }
+.home__header .home__btn a {
+    text-decoration: none;
+}
 .home__header .home_title4 {
     color: white;
     margin-top: 40px;

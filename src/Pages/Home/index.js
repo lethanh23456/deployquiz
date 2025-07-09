@@ -1,5 +1,6 @@
 import "./home.css";
 import { FaFacebook,FaTwitter,FaInstagram } from "react-icons/fa";
+import { useNavigate, Link } from "react-router-dom";
 function Home() {
     return (
         <>
@@ -8,7 +9,7 @@ function Home() {
                 <p className = "home_title2">người làm câu đố</p>
                 <p className = "home_title3">Tạo một bài kiểm tra với các loại câu hỏi khác nhau để thu hút học sinh trong lớp</p>
                 <p className = "home_title3">học, đào tạo nhân viên tại nơi làm việc hoặc chơi đố vui với bạn bè.</p>
-                <button className="home__btn">Tạo một bài kiểm tra</button>
+                <button className="home__btn"><Link to="/createTopic">Tạo một bài kiểm tra</Link></button>
                 <p className = "home_title4">✔️ Được sử dụng bởi hơn 50 triệu người vòng quanh thế giới</p>
             </div>
            
