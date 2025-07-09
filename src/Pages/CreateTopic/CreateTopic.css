@@ -42,7 +42,7 @@ textarea {
   resize: vertical;
 }
 
-button[type="submit"] {
+.create-topic-btn {
   padding: 10px 20px;
   background-color: #0066ff;
   color: white;
@@ -54,6 +54,6 @@ button[type="submit"] {
   transition: background-color 0.2s ease;
 }
 
-button[type="submit"]:hover {
+.create-topic-btn:hover {
   background-color: #0052cc;
 }
